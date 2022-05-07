@@ -4,10 +4,10 @@ import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import { getStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 
 // サーバサイドかつページでのみ実行
-export const getStaticProps: getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
   return {
     props: {
