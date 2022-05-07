@@ -9,6 +9,7 @@ export default function Post({
   postData
 }: {
   postData: {
+    id: string
     title: string
     date: string
     contentHtml: string
